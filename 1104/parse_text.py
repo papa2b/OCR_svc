@@ -4,6 +4,9 @@
 
 from read_text import text #1104/read_text.py 안에 OCR 결과 text 변수
 
+#text = extract_text("proprecessed.png")
+#print(text)
+
 lines = text.strip().split("\n") #OCR로 추출된 긴 텍스트(text)를 줄 단위로 나눈다.
 songs = [] #songs 라는 빈 상자를 만들었다. 추후에 "곡과 가수" 한 쌍씩 담는다.
 
@@ -15,5 +18,5 @@ for line in lines:
         songs.append((song_name, artist_name)) # songs 안에 한 쌍씩 담아요. 그렇다면 이걸 반복해야겠죠?
 
 for song in songs:
-    print(song)
-        
+    #print(song)
+    pass
