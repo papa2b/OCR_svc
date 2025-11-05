@@ -15,8 +15,7 @@ for line in lines:
         parts = line.split("-") #-를 기준으로 왼쪽은 parts[0] 오른쪽은 parts[1] 이 됩니다.
         song_name = parts[0].split("]")[-1].strip() # parts[0]은 타임라인이 있기 때문에 ]을 기준으로 또 쪼개고 제일 마지막에 있는 부분[-1]을 strip 공백없이 가져옵니다.
         artist_name = parts[1].strip() #parts[1]은 혼자 있으니까 strip공백만 제외하고 가져와요.
-        songs.append((song_name, artist_name)) # songs 안에 한 쌍씩 담아요. 그렇다면 이걸 반복해야겠죠?
-
+        songs.append((song_name, artist_name)) 
 for song in songs:
     #print(song)
     pass
