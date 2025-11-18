@@ -9,8 +9,9 @@ from PIL import Image
 
 img = Image.open("1104/ocr01.png")
 text = pytesseract.image_to_string(img, lang="kor+eng")
+#print(text)
 
-print(text)
+
 
 #def extract_text(image_path):
 #    custom_config = r'--oem 3 --psm 6 -l kor+eng'
@@ -20,3 +21,4 @@ print(text)
 #if __name__ == "__main__":
 #    text = extract_text("preprocessed.png")
 #    print(text)
+
