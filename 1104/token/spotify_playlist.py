@@ -3,9 +3,15 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
+<<<<<<< HEAD:1104/token/spotify_playlist.py
     client_id="323f88c42f274cc7b2c95ada52976578",
     client_secret="34a628667ffa403b9d3871176bfe1325",
     redirect_uri="http://61.109.239.120:8808/callback",
+=======
+    client_id="id",
+    client_secret="secret",
+    redirect_uri="uri",
+>>>>>>> 0c5a8e9c0e4aa9ffbad43ca7e67df38c35cef155:1104/spotify_playlist.py
     scope="playlist-modify-public"
 ))
 
@@ -34,6 +40,9 @@ with open("playlist_text.csv", newline="", encoding="utf-8") as f:
             print(f"찾을 수 없음: {track_name} - {artist_name}")
 
 print(f"\n 플레이리스트 생성 완료: {playlist['external_urls']['spotify']}")
+<<<<<<< HEAD:1104/token/spotify_playlist.py
 
 #웹앱으로 푸시알림기능
 #nginx를 
+=======
+>>>>>>> 0c5a8e9c0e4aa9ffbad43ca7e67df38c35cef155:1104/spotify_playlist.py
